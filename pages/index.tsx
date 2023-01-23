@@ -12,9 +12,9 @@ import {AiFillGithub} from 'react-icons/ai'
 
 export default function Home() {
   const {getToken} = useAuth()
-  const {user} = useUser()
+  //const {user} = useUser()
 
-  const [recipeData, setRecipeData] = useState([]);
+  const [recipeData, setRecipeData] = useState<any[]>([]);
   const [category, setCategory] = useState('all');
 
   const router = useRouter();
@@ -31,9 +31,7 @@ export default function Home() {
       }
     
       const rows = await query.order('title')
-      console.log('ROWS.data:', rows.data)
-      const titles = []
-      setRecipeData(rows.data);
+      setRecipeData(rows.data!);
     }
     fetchData();
   }, [category]);
@@ -71,7 +69,7 @@ export default function Home() {
         </div>
       </div>
       
-      <div className='mt-10 w-11/12 h-auto flex flex-wrap bg-slate-50 p-2'>
+      <div className='mt-10 w-11/12 h-auto flex flex-wrap bg-slate-50 p-2 rounded-lg shadow-md'>
           {recipeData.map((recipe, index) => (
             <div
               className='cursor-pointer text-xl w-[197px] ml-2'

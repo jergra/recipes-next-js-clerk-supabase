@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+//import Image from 'next/image'
 import { useRouter } from 'next/router';
 import { supabaseClient } from '../utils/supabase'
 import {useAuth, useUser} from '@clerk/nextjs'
@@ -29,8 +29,8 @@ export default function Create() {
             ingredients: ingredients,
             instructions: instructions,
         })
-        console.log('DATA:', data)
-        console.log('ERROR:', error)
+        //console.log('DATA:', data)
+        //console.log('ERROR:', error)
         router.push('/')
     }
   return (
@@ -42,7 +42,7 @@ export default function Create() {
         </Head>
     <form 
         onSubmit={handleSubmit}
-        className='mt-10 mb-20 bg-green-100 w-[80%] p-5 rounded-md'
+        className='mt-10 mb-20 bg-slate-50 w-[80%] p-5 rounded-lg shadow-md'
     >
         <div className='flex justify-between'>
             <div className='flex flex-col'>
@@ -92,7 +92,7 @@ export default function Create() {
                 ></textarea>
             </div>
         </div>
-        <div className='flex justify-end mt-6'>
+        <div className='flex justify-start mt-8'>
             <button 
                 type='submit' 
                 className='inline-block px-4 py-3
