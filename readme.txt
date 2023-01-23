@@ -14,6 +14,9 @@ recipes collection website built with nextjs, clerk, supabase, tailwind, with he
 start:
     npm run dev
 
+deployed:
+	https://recipes-next-js-clerk-supabase.vercel.app/
+
 update:
     git add .
     git commit -m 'message'

@@ -44,7 +44,7 @@ export default function Home() {
         <link rel="icon" href="/recipes.svg" />
       </Head>
       <div className='mt-16'>
-        <label className="block text-sm font-medium leading-5 text-gray-700">
+        <label className="flex justify-center text-sm font-medium leading-5 text-gray-700">
           Category
         </label>
         <div className="relative rounded-md shadow-sm">
@@ -53,7 +53,7 @@ export default function Home() {
               className="form-input py-2 px-3 block leading-5 rounded-md 
                 transition duration-150 ease-in-out bg-white border 
                 border-gray-300 focus:outline-none 
-                focus:shadow-outline-blue focus:border-blue-300"
+                focus:shadow-outline-blue focus:border-indigo-300"
           >
             <option value="all">All</option>
             <option value="Asian">Asian</option>
