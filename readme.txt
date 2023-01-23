@@ -1,4 +1,4 @@
-jan 23, 2023
+Jan 23, 2023
 
 C:/dev/recipes-nextjs-clerk-supabase
 

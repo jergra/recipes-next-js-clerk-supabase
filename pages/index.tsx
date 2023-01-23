@@ -94,7 +94,7 @@ export default function Home() {
         href="https://github.com/jergra/recipes-next-js-clerk-supabase"
         target='_blank'
         rel='noreferrer'
-        className='mt-40 text-gray-800'
+        className='mb-5 mt-40 text-gray-800'
       >
         <AiFillGithub size={40} />
       </a>
