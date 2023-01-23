@@ -59,15 +59,19 @@ export default function Home() {
           >
             <option value="all">All</option>
             <option value="Asian">Asian</option>
-            <option value="Desserts">Desserts</option>
+            <option value="Baking">Baking</option>
+            <option value="Meat">Meat</option>
+            <option value="Miscellaneous">Miscellaneous</option>
             <option value="Pasta">Pasta</option>
+            <option value="Rice Dishes">Rice Dishes</option>
             <option value="Seafood">Seafood</option>
             <option value="Stews">Stews</option>
+            <option value="Vegetables">Vegetables</option>
           </select>
         </div>
       </div>
       
-      <div className='mt-10 w-11/12 h-auto flex flex-wrap'>
+      <div className='mt-10 w-11/12 h-auto flex flex-wrap bg-slate-50'>
           {recipeData.map((recipe, index) => (
             <div
               className='cursor-pointer text-xl w-[200px] ml-2'
@@ -89,7 +93,7 @@ export default function Home() {
         >Add Recipe</button>
       </Link> 
       <a
-        href="https://github.com/jergra/live-news-nextjs13-stepzen"
+        href="https://github.com/jergra/recipes-next-js-clerk-supabase"
         target='_blank'
         rel='noreferrer'
         className='mt-40 text-gray-800'

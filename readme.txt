@@ -14,3 +14,17 @@ recipes collection website built with nextjs, clerk, supabase, tailwind, with he
 start:
     npm run dev
 
+update:
+    git add .
+    git commit -m 'message'
+    git push
+
+
+.env.local looks like this:
+
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_KEY=
+

@@ -63,11 +63,14 @@ export default function Create() {
                 >
                     <option value="">Select</option>
                     <option value="Asian">Asian</option>
-                    <option value="Desserts">Desserts</option>
+                    <option value="Baking">Baking</option>
                     <option value="Meat">Meat</option>
+                    <option value="Miscellaneous">Miscellaneous</option>
                     <option value="Pasta">Pasta</option>
+                    <option value="Rice Dishes">Rice Dishes</option>
                     <option value="Seafood">Seafood</option>
                     <option value="Stews">Stews</option>
+                    <option value="Vegetables">Vegetables</option>
                 </select>
             </div>
         </div>
