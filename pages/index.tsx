@@ -71,10 +71,10 @@ export default function Home() {
         </div>
       </div>
       
-      <div className='mt-10 w-11/12 h-auto flex flex-wrap bg-slate-50'>
+      <div className='mt-10 w-11/12 h-auto flex flex-wrap bg-slate-50 p-2'>
           {recipeData.map((recipe, index) => (
             <div
-              className='cursor-pointer text-xl w-[200px] ml-2'
+              className='cursor-pointer text-xl w-[197px] ml-2'
               key={index}
               onClick={() => router.push(`/recipe?id=${recipe.id}&title=${recipe.title}&category=${recipe.category}&ingredients=${recipe.ingredients}&instructions=${recipe.instructions}`)}
             >

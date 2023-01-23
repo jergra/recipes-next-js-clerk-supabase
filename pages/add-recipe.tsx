@@ -42,7 +42,7 @@ export default function Create() {
         </Head>
     <form 
         onSubmit={handleSubmit}
-        className='mt-10 mb-20 bg-green-200 w-[80%] p-5'
+        className='mt-10 mb-20 bg-green-100 w-[80%] p-5 rounded-md'
     >
         <div className='flex justify-between'>
             <div className='flex flex-col'>
@@ -80,7 +80,7 @@ export default function Create() {
                 <textarea
                     value={ingredients}
                     onChange={(e) => setIngredients(e.target.value)}
-                    className='h-80 input input-bordered'
+                    className='h-[300px] input input-bordered'
                 ></textarea>
             </div>
             <div className='flex flex-col w-[60%]'>
@@ -88,11 +88,11 @@ export default function Create() {
                 <textarea
                     value={instructions}
                     onChange={(e) => setInstructions(e.target.value)}
-                    className='h-80 input input-bordered'
+                    className='h-[300px] input input-bordered'
                 ></textarea>
             </div>
         </div>
-        <div className='flex justify-end mt-10'>
+        <div className='flex justify-end mt-6'>
             <button 
                 type='submit' 
                 className='inline-block px-4 py-3
