@@ -10,7 +10,7 @@ export const Header = () => {
                     <div>
                         <Image src='/recipes.svg' width='50' height='50' alt='Logo' />
                     </div>
-                    <div className='text-5xl text-gray-800'>
+                    <div className='text-5xl text-slate-800'>
                         R E C I P E S
                     </div>
                     <div>
