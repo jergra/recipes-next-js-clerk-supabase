@@ -38,8 +38,8 @@ export default function Recipe() {
         <div className='mt-20 w-1/2'>
           <h1 className='mb-3'>{title}</h1>
           <p className='mb-3'>Category: {category}</p>
-          <p className='mb-3'>Ingredients: {ingredients}</p>
-          <p className='mb-3'>Instructions: {instructions}</p>
+          <p className="w-[40%] pr-5 whitespace-pre-wrap">Ingredients: {ingredients}</p>
+          <p className="w-[60%] whitespace-pre-wrap">Instructions: {instructions}</p>
         </div>
       </div>
     </div>
