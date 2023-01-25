@@ -45,7 +45,7 @@ export default function Home() {
         <link rel="icon" href="/recipes.svg" />
       </Head>
       <main className='flex flex-col w-full items-center'>
-        <div className='mt-12'>
+        <div className='mt-10'>
           <div className="relative rounded-md">
             <select value={category} onChange={(e) => 
               setCategory(e.target.value)} 
@@ -81,7 +81,7 @@ export default function Home() {
         </div>
         <Link href='/add-recipe'>
           <button 
-            className='inline-block mt-20 px-4 py-3
+            className='inline-block mt-10 px-4 py-3
             text-sm font-semibold text-center
             text-white uppercase transition
             duration-200 ease-in-out bg-indigo-600 
@@ -90,7 +90,7 @@ export default function Home() {
           >Add Recipe</button>
         </Link> 
       </main>
-      <footer className='mb-5'>
+      <footer className='mb-[100px]'>
         <a
           href="https://github.com/jergra/recipes-next-js-clerk-supabase"
           target='_blank'
