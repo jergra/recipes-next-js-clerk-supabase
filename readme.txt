@@ -23,6 +23,12 @@ update:
     git push
 
 
+after creating a project at supabase, copy the JWT secret key
+go to clerk.dev and set up authentication
+under 'JWT Templates' at clerk.dev, click 'New template', 
+click 'supabase', paste in the supabase JWT secret key
+
+
 .env.local looks like this:
 
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=

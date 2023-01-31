@@ -4,7 +4,8 @@ import {SignedIn, SignedOut, UserButton} from '@clerk/nextjs'
 
 export const Header = () => {
     return (
-        <header className="bg-red-200">
+        <header className="transition
+        duration-200 ease-in-out hover:bg-red-300 bg-red-200">
             <Link href='/'>
                 <div className='flex justify-evenly items-center p-4'>
                     <div>
