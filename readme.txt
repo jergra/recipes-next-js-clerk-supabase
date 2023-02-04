@@ -28,6 +28,19 @@ go to clerk.dev and set up authentication
 under 'JWT Templates' at clerk.dev, click 'New template', 
 click 'supabase', paste in the supabase JWT secret key
 
+create a database called 'recipes' at supabase 
+turn off 'Enable Row Level Security (RLS)'
+these are the columns:
+    id              int8
+    user_id         text
+    title           text
+    recipe_creator  text
+    created_at      timestamptz     now()
+    ingredients     text
+    instructions    text
+    updated_at      timestamptz     now()
+    category        text
+
 
 .env.local looks like this:
 

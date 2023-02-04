@@ -71,7 +71,7 @@ export default function Home() {
         <div className='mt-10 w-11/12 h-fit flex flex-wrap bg-slate-50 p-2 rounded-lg'>
             {recipeData.map((recipe, index) => (
               <div
-                className='cursor-pointer text-xl w-[195px] ml-2'
+                className='cursor-pointer text-xl w-[297px] ml-2'
                 key={index}
                 onClick={() => router.push(`/recipe?id=${recipe.id}`)}
               >
